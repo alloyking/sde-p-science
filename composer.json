@@ -1,0 +1,16 @@
+{
+    "name": "timshultis/platform_science",
+    "description": "A test project",
+    "autoload": {
+        "psr-4": {
+            "Domain\\": "Domain/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tim Shultis",
+            "email": "tim.shultis@morsekode.com"
+        }
+    ],
+    "require": {}
+}
