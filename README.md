@@ -7,7 +7,8 @@ number of consonants in the driver’s name multiplied by 1. (multiply by 1???)
 (besides 1) with the length of the driver’s name, the SS is increased by 50% above the
 base SS. (if we are only comparing length here what else would be common?).  My only other thought is you are looking for GCD? Greatest Common Divsor?
 
-`function calculateGCD($a, $b) {
+```
+function calculateGCD($a, $b) {
     if ($b == 0) {
         return $a;
     }
@@ -19,7 +20,8 @@ $driverNameLength = strlen($driverName);
 $gcd = calculateGCD($streetNameLength, $driverNameLength);
 if ($gcd > 1) {
     $ss += 0.5 * $baseSS;
-}`
+}
+```
 
 If I got that wrong then I'll let you explain it to me. :)
 
