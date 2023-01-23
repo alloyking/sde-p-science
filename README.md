@@ -21,6 +21,8 @@ $gcd = calculateGCD($streetNameLength, $driverNameLength);
 if ($gcd > 1) {
     $ss += 0.5 * $baseSS;
 }
+
+//PHP's gmp_gcd() might work just as well
 ```
 
 If I got that wrong then I'll let you explain it to me. :)
