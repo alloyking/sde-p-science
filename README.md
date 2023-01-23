@@ -5,7 +5,7 @@ number of consonants in the driver’s name multiplied by 1. (multiply by 1???)
 
 2. If the length of the shipment's destination street name shares any common factors
 (besides 1) with the length of the driver’s name, the SS is increased by 50% above the
-base SS. (if we are only comparing length here what else would be common?).  My only other thought is you are looking for GCD? Greatest Common Divsor?
+base SS. (if we are only comparing length here what else would be common?).  My only other thought is you are looking for GCD? Greatest Common Divisor?
 
 ```
 function calculateGCD($a, $b) {
