@@ -1,5 +1,5 @@
 # The test
-## A few things to note that I (ignored isn't the right word).  But thought Hmmmm.  Is this a trick or just poorly worded?
+## A few things to note that I (ignored isn't the right word).  But thought Hmmmm...  Is this a trick or just poorly worded?
  1. If the length of the shipment's destination street name is odd, the base SS is the
 number of consonants in the driver’s name multiplied by 1. (multiply by 1???)
 
