@@ -13,7 +13,7 @@ class Score
     public function execute(
         string $streetName,
         string $driversName
-    ){
+    ) :  self {
 
         ///oh we have a choice to make.  Do we truncate whitespace, special characters?
         /// I think yes, as a way of avoiding input error and incorrect scores
@@ -21,7 +21,7 @@ class Score
         $length = strlen($streetName);
 
         //probably should build up some kind of nice response class? Maybe I'm undecided
-        //making class variables instead
+        //making class variables instead.  Also could be private vars with getters which would be nicer here
         $this->streetName = $streetName;
         $this->driversName = $driversName;
 
@@ -50,17 +50,11 @@ class Score
 
     private function isEven(int $length) : bool
     {
-        if ($length % 2 == 0) {
-            return true;
-        }
-        return false;
+        return $length % 2 === 0;
     }
 
     private function isOdd(int $length) : bool
     {
-        if ($length % 2 !== 0) {
-            return true;
-        }
-        return false;
+        return $length % 2 !== 0;
     }
 }

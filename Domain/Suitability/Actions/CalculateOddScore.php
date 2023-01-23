@@ -17,17 +17,16 @@ class CalculateOddScore
         return $this->consonantLength($driversName);
     }
 
-    private function consonantLength($string = "") : int
+    private function consonantLength(string $string = "") : int
     {
         //lowercase and remove anything that is not a letter.  Digits, special chars, spaces are not consonants (IMO)
         $strBuffer = $this->cleanStringForScore->execute($string);
 
-        $initialLength = strlen($strBuffer);
         $vowels = array("a", "i", "u", "e", "o");
         $consonants = 0;
 
-        for ($i = 0; $i <= $initialLength - 1; $i++) {
-            if (!in_array($strBuffer[$i], $vowels)) {
+        for ($i = 0; $i <=  strlen($strBuffer) - 1; $i++) {
+            if (!in_array(strtolower($strBuffer[$i]), $vowels)) {
                 $consonants++;
             }
         }

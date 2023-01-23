@@ -19,17 +19,21 @@ class TallyScores
         $location = [];
         $this->totalScore = 0;
 
+        //also consider something along these lines instead?
+        // --> for ($i = 0 + $advance; $i < count($this->addresses); $i++) {
+
         foreach ($this->addresses as $address){
             $address = new ParseAddress($address);
             $street = $address->getParsed()['street'];
             $score = new Score();
             $scoreObject = $score->execute($street, $this->drivers[$loop]);
             $location[$street] = $scoreObject;
-            $this->totalScore =  $this->totalScore + $scoreObject->baseScore;
+            $this->totalScore += $scoreObject->baseScore;
             $loop++;
             $loop = ( ($loop == count($this->addresses) ) ? 0 : $loop );
         }
 
         return $location;
     }
+
 }
